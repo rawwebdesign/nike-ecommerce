@@ -11,25 +11,25 @@ const relatedProducts = [
     id: 2,
     name: "Air Max 90",
     price: 120,
-    image: "/placeholder.svg?height=200&width=200&text=Air+Max+90",
+    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e9e85463-4323-4a99-a56e-c8999bb3fff9/NIKE+VOMERO+18.png",
   },
   {
     id: 3,
     name: "React Infinity Run",
     price: 160,
-    image: "/placeholder.svg?height=200&width=200&text=React+Infinity",
+    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b6486cef-46c4-49de-9b33-e2f3343cc427/NIKE+VOMERO+18.png",
   },
   {
     id: 4,
     name: "Air Force 1",
     price: 110,
-    image: "/placeholder.svg?height=200&width=200&text=Air+Force+1",
+    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c5c351c7-765d-4874-b157-09cb87891f58/NIKE+VOMERO+18.png",
   },
   {
     id: 5,
     name: "Blazer Mid",
     price: 100,
-    image: "/placeholder.svg?height=200&width=200&text=Blazer+Mid",
+    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/da3fb177-42d1-4d49-be0c-d8be070344d3/NIKE+VOMERO+18.png",
   },
 ]
 
@@ -147,7 +147,7 @@ export default async function ProductDetailPage() {
           <div className="space-y-4">
             <div className="aspect-square bg-gray-50 rounded-lg overflow-hidden">
               <Image
-                src="/images/air-max-270-main.png"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4ae3c0d4-1573-4842-9b01-5589cb11f359/NIKE+VOMERO+18.png"
                 alt="Nike Air Max 270 - Main View"
                 width={600}
                 height={600}
@@ -158,7 +158,7 @@ export default async function ProductDetailPage() {
             <div className="grid grid-cols-4 gap-4">
               <div className="aspect-square bg-gray-50 rounded-lg overflow-hidden cursor-pointer border-2 border-black">
                 <Image
-                  src="/images/air-max-270-main.png"
+                  src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4d03a5f2-05f6-481b-a982-824028a5e997/NIKE+VOMERO+18.png"
                   alt="Nike Air Max 270 - View 1"
                   width={150}
                   height={150}
@@ -167,7 +167,7 @@ export default async function ProductDetailPage() {
               </div>
               <div className="aspect-square bg-gray-50 rounded-lg overflow-hidden cursor-pointer hover:border-2 hover:border-gray-300">
                 <Image
-                  src="/images/air-max-270-side.png"
+                  src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/33d26334-6758-47c8-82b1-4a57c28825e7/NIKE+VOMERO+18.png"
                   alt="Nike Air Max 270 - Side View"
                   width={150}
                   height={150}
@@ -176,7 +176,7 @@ export default async function ProductDetailPage() {
               </div>
               <div className="aspect-square bg-gray-50 rounded-lg overflow-hidden cursor-pointer hover:border-2 hover:border-gray-300">
                 <Image
-                  src="/images/air-max-270-back.png"
+                  src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9e40e32e-c274-43f4-9685-7d27d6f20d4e/NIKE+VOMERO+18.png"
                   alt="Nike Air Max 270 - Back View"
                   width={150}
                   height={150}
@@ -185,7 +185,7 @@ export default async function ProductDetailPage() {
               </div>
               <div className="aspect-square bg-gray-50 rounded-lg overflow-hidden cursor-pointer hover:border-2 hover:border-gray-300">
                 <Image
-                  src="/images/air-max-270-sole.png"
+                  src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3dde9670-b73f-4f04-98a3-119f51420870/NIKE+VOMERO+18.png"
                   alt="Nike Air Max 270 - Sole View"
                   width={150}
                   height={150}
