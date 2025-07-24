@@ -89,6 +89,9 @@ export default async function ProductDetailPage() {
                 <Link href="#" className="text-black hover:text-orange-600 font-medium">
                   Kids
                 </Link>
+                <Link href="#" className="text-black hover:text-orange-600 font-medium">
+                  Sale
+                </Link>
               </nav>
             </div>
             <div className="flex items-center space-x-4">
