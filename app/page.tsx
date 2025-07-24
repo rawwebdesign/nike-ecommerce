@@ -63,7 +63,6 @@ const reviews = [
 export default async function ProductDetailPage() {
   const cookieStore = await cookies()
   const bannerType = cookieStore.get("banner-type")?.value || "default"
-  const userName = cookieStore.get("user-name")?.value
   const userLocation = cookieStore.get("user-location")?.value || "visitor"
 
   return (
@@ -88,6 +87,9 @@ export default async function ProductDetailPage() {
                 </Link>
                 <Link href="#" className="text-black hover:text-orange-600 font-medium">
                   Kids
+                </Link>
+                <Link href="#" className="text-black hover:text-orange-600 font-medium">
+                  Sale
                 </Link>
               </nav>
             </div>
@@ -115,8 +117,8 @@ export default async function ProductDetailPage() {
         <div className="container mx-auto px-4 text-center">
           <p className="font-medium">
             {bannerType === "sale"
-              ? `🔥 FLASH SALE: Up to 40% off select items ${userName ? `for ${userName}` : ""}`
-              : `Free shipping on orders over $50 ${userLocation === "member" ? "| Members get free returns" : ""}`}
+              ? `🔥 FLASH SALE: Up to 40% off select items`
+              : `Free shipping on orders over $50`}
           </p>
         </div>
       </div>
@@ -128,11 +130,11 @@ export default async function ProductDetailPage() {
             Home
           </Link>
           <ChevronRight className="h-4 w-4" />
-          <Link href="/men" className="hover:text-black">
+          <Link href="#" className="hover:text-black">
             Men
           </Link>
           <ChevronRight className="h-4 w-4" />
-          <Link href="/men/shoes" className="hover:text-black">
+          <Link href="#" className="hover:text-black">
             Shoes
           </Link>
           <ChevronRight className="h-4 w-4" />
@@ -215,15 +217,6 @@ export default async function ProductDetailPage() {
                 <Badge className="bg-green-600 text-white">17% OFF</Badge>
               </div>
             </div>
-
-            {userLocation === "member" && (
-              <div className="bg-black text-white p-4 rounded-lg">
-                <p className="font-medium">
-                  👑 Member Exclusive: {userName ? `${userName}, you` : "You"} save an additional $15 with membership!
-                </p>
-                <p className="text-sm text-gray-300 mt-1">Final price: $135.00</p>
-              </div>
-            )}
 
             <div>
               <h3 className="font-semibold text-black mb-3">Select Size</h3>
