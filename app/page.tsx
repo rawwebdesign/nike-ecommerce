@@ -118,8 +118,8 @@ export default async function ProductDetailPage() {
         <div className="container mx-auto px-4 text-center">
           <p className="font-medium">
             {bannerType === "sale"
-              ? `🔥 FLASH SALE: Up to 40% off select items ${userName ? `for ${userName}` : ""}`
-              : `Free shipping on orders over $50 ${userLocation === "member" ? "| Members get free returns" : ""}`}
+              ? `🔥 FLASH SALE: Up to 40% off select items`
+              : `Free shipping on orders over $50`}
           </p>
         </div>
       </div>
@@ -131,11 +131,11 @@ export default async function ProductDetailPage() {
             Home
           </Link>
           <ChevronRight className="h-4 w-4" />
-          <Link href="/men" className="hover:text-black">
+          <Link href="#" className="hover:text-black">
             Men
           </Link>
           <ChevronRight className="h-4 w-4" />
-          <Link href="/men/shoes" className="hover:text-black">
+          <Link href="#" className="hover:text-black">
             Shoes
           </Link>
           <ChevronRight className="h-4 w-4" />
