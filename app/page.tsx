@@ -63,7 +63,6 @@ const reviews = [
 export default async function ProductDetailPage() {
   const cookieStore = await cookies()
   const bannerType = cookieStore.get("banner-type")?.value || "default"
-  const userName = cookieStore.get("user-name")?.value
   const userLocation = cookieStore.get("user-location")?.value || "visitor"
 
   return (
@@ -218,15 +217,6 @@ export default async function ProductDetailPage() {
                 <Badge className="bg-green-600 text-white">17% OFF</Badge>
               </div>
             </div>
-
-            {userLocation === "member" && (
-              <div className="bg-black text-white p-4 rounded-lg">
-                <p className="font-medium">
-                  👑 Member Exclusive: {userName ? `${userName}, you` : "You"} save an additional $15 with membership!
-                </p>
-                <p className="text-sm text-gray-300 mt-1">Final price: $135.00</p>
-              </div>
-            )}
 
             <div>
               <h3 className="font-semibold text-black mb-3">Select Size</h3>
